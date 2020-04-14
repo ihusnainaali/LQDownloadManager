@@ -143,7 +143,7 @@ extension LQDownloadManager {
     completeBlock: @escaping (LQDownloadState) -> Void
     ) {
     
-    if isComplate(urlString) {
+    if isComplete(urlString) {
       completeBlock(.complete)
       debugPrint("(￣.￣)该资源已下载完成")
       return
